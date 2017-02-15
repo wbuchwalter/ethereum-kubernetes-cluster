@@ -1,0 +1,14 @@
+#build all images with custom genesis.json etc
+
+version: '2'
+services:
+  tx:
+    build: 
+      context: .
+      dockerfile: tx-node/Dockerfile
+    image: wbuchwalter/tx-node
+  miner:
+    build:
+      context: .
+      dockerfile: miner-node/Dockerfile
+    image: wbuchwalter/miner-node
