@@ -1,4 +1,4 @@
-# Ethereum cluster running on Kubernetes
+# Ethereum network running on Kubernetes
 
 ### 1 - Deploy a Kubernetes cluster
 For Azure, follow the documentation: [Creating your Kubernetes cluster](https://docs.microsoft.com/en-us/azure/container-service/container-service-kubernetes-walkthrough)
