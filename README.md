@@ -5,7 +5,9 @@ For Azure, follow the documentation: [Creating your Kubernetes cluster](https://
 
 ### 2 - Spin up your Ethereum network
 
-If you want to modify the `genesis.json`, do so in the `./geth-node` folder, then build the docker image and push it to a container registry. Finally, modify `miner-nodes.yaml` and `tx-nodes.yaml` to use your new image instead of `wbuchwalter/geth-node`
+If you want to modify the `genesis.json`, do so in the `./geth-node` folder, then build the docker image and push it to a container registry. Finally, modify `miner-nodes.yaml` and `tx-nodes.yaml` to use your new image instead of `wbuchwalter/geth-node`.  
+
+Then:
 
 * `kubectl create -f dashboard.yaml` 
 * `kubectl create -f miner-nodes.yaml` 
